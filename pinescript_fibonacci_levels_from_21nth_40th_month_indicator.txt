@@ -1,0 +1,421 @@
+//@version=5
+indicator("Fibonacci Levels from 21nth - 40th month", overlay=true,max_lines_count = 500)
+
+// Retrieve Data for the 21st Month
+high_price21 = request.security(syminfo.tickerid, "M", high[21]) 
+low_price21 = request.security(syminfo.tickerid, "M", low[21])
+price_range21 = high_price21 - low_price21
+
+// Calculate Fibonacci Levels
+fib21 = low_price21 + (price_range21 * 0.382)       
+fib22 = low_price21 + (price_range21 * 0.618)
+
+// Plot Lines
+line21 = line.new(bar_index - 100, fib21, bar_index, fib21, color=color.green, width=2, extend=extend.both)                                                  
+line22 = line.new(bar_index - 100, fib22, bar_index, fib22, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line21[1])
+line.delete(line22[1])
+
+// Label Fibonacci Levels
+x21 = label.new(bar_index + 100, fib21, text="21DN", color=color.yellow, size=size.small)
+x22 = label.new(bar_index + 100, fib22, text="21UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 22nd Month
+high_price22 = request.security(syminfo.tickerid, "M", high[22]) 
+low_price22 = request.security(syminfo.tickerid, "M", low[22])
+price_range22 = high_price22 - low_price22
+
+// Calculate Fibonacci Levels
+fib23 = low_price22 + (price_range22 * 0.382)       
+fib24 = low_price22 + (price_range22 * 0.618)
+
+// Plot Lines
+line23 = line.new(bar_index - 100, fib23, bar_index, fib23, color=color.green, width=2, extend=extend.both)                                                  
+line24 = line.new(bar_index - 100, fib24, bar_index, fib24, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line23[1])
+line.delete(line24[1])
+
+// Label Fibonacci Levels
+x23 = label.new(bar_index + 200, fib23, text="22DN", color=color.yellow, size=size.small)
+x24 = label.new(bar_index + 200, fib24, text="22UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 23rd Month
+high_price23 = request.security(syminfo.tickerid, "M", high[23]) 
+low_price23 = request.security(syminfo.tickerid, "M", low[23])
+price_range23 = high_price23 - low_price23
+
+// Calculate Fibonacci Levels
+fib25 = low_price23 + (price_range23 * 0.382)       
+fib26 = low_price23 + (price_range23 * 0.618)
+
+// Plot Lines
+line25 = line.new(bar_index - 100, fib25, bar_index, fib25, color=color.green, width=2, extend=extend.both)                                                  
+line26 = line.new(bar_index - 100, fib26, bar_index, fib26, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line25[1])
+line.delete(line26[1])
+
+// Label Fibonacci Levels
+x25 = label.new(bar_index + 300, fib25, text="23DN", color=color.yellow, size=size.small)
+x26 = label.new(bar_index + 300, fib26, text="23UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 24th Month
+high_price24 = request.security(syminfo.tickerid, "M", high[24]) 
+low_price24 = request.security(syminfo.tickerid, "M", low[24])
+price_range24 = high_price24 - low_price24
+
+// Calculate Fibonacci Levels
+fib27 = low_price24 + (price_range24 * 0.382)       
+fib28 = low_price24 + (price_range24 * 0.618)
+
+// Plot Lines
+line27 = line.new(bar_index - 100, fib27, bar_index, fib27, color=color.green, width=2, extend=extend.both)                                                  
+line28 = line.new(bar_index - 100, fib28, bar_index, fib28, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line27[1])
+line.delete(line28[1])
+
+// Label Fibonacci Levels
+x27 = label.new(bar_index + 400, fib27, text="24DN", color=color.yellow, size=size.small)
+x28 = label.new(bar_index + 400, fib28, text="24UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 25th Month
+high_price25 = request.security(syminfo.tickerid, "M", high[25]) 
+low_price25 = request.security(syminfo.tickerid, "M", low[25])
+price_range25 = high_price25 - low_price25
+
+// Calculate Fibonacci Levels
+fib29 = low_price25 + (price_range25 * 0.382)       
+fib30 = low_price25 + (price_range25 * 0.618)
+
+// Plot Lines
+line29 = line.new(bar_index - 100, fib29, bar_index, fib29, color=color.green, width=2, extend=extend.both)                                                  
+line30 = line.new(bar_index - 100, fib30, bar_index, fib30, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line29[1])
+line.delete(line30[1])
+
+// Label Fibonacci Levels
+x29 = label.new(bar_index + 499, fib29, text="25DN", color=color.yellow, size=size.small)
+x30 = label.new(bar_index + 499, fib30, text="25UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 26th Month
+high_price26 = request.security(syminfo.tickerid, "M", high[26]) 
+low_price26 = request.security(syminfo.tickerid, "M", low[26])
+price_range26 = high_price26 - low_price26
+
+// Calculate Fibonacci Levels
+fib31 = low_price26 + (price_range26 * 0.382)       
+fib32 = low_price26 + (price_range26 * 0.618)
+
+// Plot Lines
+line31 = line.new(bar_index - 100, fib31, bar_index, fib31, color=color.green, width=2, extend=extend.both)                                                  
+line32 = line.new(bar_index - 100, fib32, bar_index, fib32, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line31[1])
+line.delete(line32[1])
+
+// Label Fibonacci Levels
+x31 = label.new(bar_index + 100, fib31, text="26DN", color=color.yellow, size=size.small)
+x32 = label.new(bar_index + 100, fib32, text="26UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 27th Month
+high_price27 = request.security(syminfo.tickerid, "M", high[27]) 
+low_price27 = request.security(syminfo.tickerid, "M", low[27])
+price_range27 = high_price27 - low_price27
+
+// Calculate Fibonacci Levels
+fib33 = low_price27 + (price_range27 * 0.382)       
+fib34 = low_price27 + (price_range27 * 0.618)
+
+// Plot Lines
+line33 = line.new(bar_index - 100, fib33, bar_index, fib33, color=color.green, width=2, extend=extend.both)                                                  
+line34 = line.new(bar_index - 100, fib34, bar_index, fib34, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line33[1])
+line.delete(line34[1])
+
+// Label Fibonacci Levels
+x33 = label.new(bar_index + 200, fib33, text="27DN", color=color.yellow, size=size.small)
+x34 = label.new(bar_index + 200, fib34, text="27UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 28th Month
+high_price28 = request.security(syminfo.tickerid, "M", high[28]) 
+low_price28 = request.security(syminfo.tickerid, "M", low[28])
+price_range28 = high_price28 - low_price28
+
+// Calculate Fibonacci Levels
+fib35 = low_price28 + (price_range28 * 0.382)       
+fib36 = low_price28 + (price_range28 * 0.618)
+
+// Plot Lines
+line35 = line.new(bar_index - 100, fib35, bar_index, fib35, color=color.green, width=2, extend=extend.both)                                                  
+line36 = line.new(bar_index - 100, fib36, bar_index, fib36, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line35[1])
+line.delete(line36[1])
+
+// Label Fibonacci Levels
+x35 = label.new(bar_index + 300, fib35, text="28DN", color=color.yellow, size=size.small)
+x36 = label.new(bar_index + 300, fib36, text="28UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 29th Month
+high_price29 = request.security(syminfo.tickerid, "M", high[29]) 
+low_price29 = request.security(syminfo.tickerid, "M", low[29])
+price_range29 = high_price29 - low_price29
+
+// Calculate Fibonacci Levels
+fib37 = low_price29 + (price_range29 * 0.382)       
+fib38 = low_price29 + (price_range29 * 0.618)
+
+// Plot Lines
+line37 = line.new(bar_index - 100, fib37, bar_index, fib37, color=color.green, width=2, extend=extend.both)                                                  
+line38 = line.new(bar_index - 100, fib38, bar_index, fib38, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line37[1])
+line.delete(line38[1])
+
+// Label Fibonacci Levels
+x37 = label.new(bar_index + 400, fib37, text="29DN", color=color.yellow, size=size.small)
+x38 = label.new(bar_index + 400, fib38, text="29UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 30th Month
+high_price30 = request.security(syminfo.tickerid, "M", high[30]) 
+low_price30 = request.security(syminfo.tickerid, "M", low[30])
+price_range30 = high_price30 - low_price30
+
+// Calculate Fibonacci Levels
+fib39 = low_price30 + (price_range30 * 0.382)       
+fib40 = low_price30 + (price_range30 * 0.618)
+
+// Plot Lines
+line39 = line.new(bar_index - 100, fib39, bar_index, fib39, color=color.green, width=2, extend=extend.both)                                                  
+line40 = line.new(bar_index - 100, fib40, bar_index, fib40, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line39[1])
+line.delete(line40[1])
+
+// Label Fibonacci Levels
+x39 = label.new(bar_index + 499,fib39, text="30DN", color=color.yellow, size=size.small)
+x40 = label.new(bar_index + 499, fib40, text="30UP", color=color.yellow, size=size.small)
+// Retrieve Data for the 31st Month
+high_price31 = request.security(syminfo.tickerid, "M", high[31]) 
+low_price31 = request.security(syminfo.tickerid, "M", low[31])
+price_range31 = high_price31 - low_price31
+
+// Calculate Fibonacci Levels
+fib41 = low_price31 + (price_range31 * 0.382)       
+fib42 = low_price31 + (price_range31 * 0.618)
+
+// Plot Lines
+line41 = line.new(bar_index - 100, fib41, bar_index, fib41, color=color.green, width=2, extend=extend.both)                                                  
+line42 = line.new(bar_index - 100, fib42, bar_index, fib42, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line41[1])
+line.delete(line42[1])
+
+// Label Fibonacci Levels
+x41 = label.new(bar_index + 100, fib41, text="31DN", color=color.yellow, size=size.small)
+x42 = label.new(bar_index + 100, fib42, text="31UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 32nd Month
+high_price32 = request.security(syminfo.tickerid, "M", high[32]) 
+low_price32 = request.security(syminfo.tickerid, "M", low[32])
+price_range32 = high_price32 - low_price32
+
+// Calculate Fibonacci Levels
+fib43 = low_price32 + (price_range32 * 0.382)       
+fib44 = low_price32 + (price_range32 * 0.618)
+
+// Plot Lines
+line43 = line.new(bar_index - 100, fib43, bar_index, fib43, color=color.green, width=2, extend=extend.both)                                                  
+line44 = line.new(bar_index - 100, fib44, bar_index, fib44, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line43[1])
+line.delete(line44[1])
+
+// Label Fibonacci Levels
+x43 = label.new(bar_index + 200, fib43, text="32DN", color=color.yellow, size=size.small)
+x44 = label.new(bar_index + 200, fib44, text="32UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 33rd Month
+high_price33 = request.security(syminfo.tickerid, "M", high[33]) 
+low_price33 = request.security(syminfo.tickerid, "M", low[33])
+price_range33 = high_price33 - low_price33
+
+// Calculate Fibonacci Levels
+fib45 = low_price33 + (price_range33 * 0.382)       
+fib46 = low_price33 + (price_range33 * 0.618)
+
+// Plot Lines
+line45 = line.new(bar_index - 100, fib45, bar_index, fib45, color=color.green, width=2, extend=extend.both)                                                  
+line46 = line.new(bar_index - 100, fib46, bar_index, fib46, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line45[1])
+line.delete(line46[1])
+
+// Label Fibonacci Levels
+x45 = label.new(bar_index + 300, fib45, text="33DN", color=color.yellow, size=size.small)
+x46 = label.new(bar_index + 300, fib46, text="33UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 34th Month
+high_price34 = request.security(syminfo.tickerid, "M", high[34]) 
+low_price34 = request.security(syminfo.tickerid, "M", low[34])
+price_range34 = high_price34 - low_price34
+
+// Calculate Fibonacci Levels
+fib47 = low_price34 + (price_range34 * 0.382)       
+fib48 = low_price34 + (price_range34 * 0.618)
+
+// Plot Lines
+line47 = line.new(bar_index - 100, fib47, bar_index, fib47, color=color.green, width=2, extend=extend.both)                                                  
+line48 = line.new(bar_index - 100, fib48, bar_index, fib48, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line47[1])
+line.delete(line48[1])
+
+// Label Fibonacci Levels
+x47 = label.new(bar_index + 400, fib47, text="34DN", color=color.yellow, size=size.small)
+x48 = label.new(bar_index + 400, fib48, text="34UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 35th Month
+high_price35 = request.security(syminfo.tickerid, "M", high[35]) 
+low_price35 = request.security(syminfo.tickerid, "M", low[35])
+price_range35 = high_price35 - low_price35
+
+// Calculate Fibonacci Levels
+fib49 = low_price35 + (price_range35 * 0.382)       
+fib50 = low_price35 + (price_range35 * 0.618)
+
+// Plot Lines
+line49 = line.new(bar_index - 100, fib49, bar_index, fib49, color=color.green, width=2, extend=extend.both)                                                  
+line50 = line.new(bar_index - 100, fib50, bar_index, fib50, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line49[1])
+line.delete(line50[1])
+
+// Label Fibonacci Levels
+x49 = label.new(bar_index + 499, fib49, text="35DN", color=color.yellow, size=size.small)
+x50 = label.new(bar_index + 499, fib50, text="35UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 36th Month
+high_price36 = request.security(syminfo.tickerid, "M", high[36]) 
+low_price36 = request.security(syminfo.tickerid, "M", low[36])
+price_range36 = high_price36 - low_price36
+
+// Calculate Fibonacci Levels
+fib51 = low_price36 + (price_range36 * 0.382)       
+fib52 = low_price36 + (price_range36 * 0.618)
+
+// Plot Lines
+line51 = line.new(bar_index - 100, fib51, bar_index, fib51, color=color.green, width=2, extend=extend.both)                                                  
+line52 = line.new(bar_index - 100, fib52, bar_index, fib52, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line51[1])
+line.delete(line52[1])
+
+// Label Fibonacci Levels
+x51 = label.new(bar_index + 100, fib51, text="36DN", color=color.yellow, size=size.small)
+x52 = label.new(bar_index + 100, fib52, text="36UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 37th Month
+high_price37 = request.security(syminfo.tickerid, "M", high[37]) 
+low_price37 = request.security(syminfo.tickerid, "M", low[37])
+price_range37 = high_price37 - low_price37
+
+// Calculate Fibonacci Levels
+fib53 = low_price37 + (price_range37 * 0.382)       
+fib54 = low_price37 + (price_range37 * 0.618)
+
+// Plot Lines
+line53 = line.new(bar_index - 100, fib53, bar_index, fib53, color=color.green, width=2, extend=extend.both)                                                  
+line54 = line.new(bar_index - 100, fib54, bar_index, fib54, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line53[1])
+line.delete(line54[1])
+
+// Label Fibonacci Levels
+x53 = label.new(bar_index + 200, fib53, text="37DN", color=color.yellow, size=size.small)
+x54 = label.new(bar_index + 200, fib54, text="37UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 38th Month
+high_price38 = request.security(syminfo.tickerid, "M", high[38]) 
+low_price38 = request.security(syminfo.tickerid, "M", low[38])
+price_range38 = high_price38 - low_price38
+
+// Calculate Fibonacci Levels
+fib55 = low_price38 + (price_range38 * 0.382)       
+fib56 = low_price38 + (price_range38 * 0.618)
+
+// Plot Lines
+line55 = line.new(bar_index - 100, fib55, bar_index, fib55, color=color.green, width=2, extend=extend.both)                                                  
+line56 = line.new(bar_index - 100, fib56, bar_index, fib56, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line55[1])
+line.delete(line56[1])
+
+// Label Fibonacci Levels
+x55 = label.new(bar_index + 300, fib55, text="38DN", color=color.yellow, size=size.small)
+x56 = label.new(bar_index + 300, fib56, text="38UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 39th Month
+high_price39 = request.security(syminfo.tickerid, "M", high[39]) 
+low_price39 = request.security(syminfo.tickerid, "M", low[39])
+price_range39 = high_price39 - low_price39
+
+// Calculate Fibonacci Levels
+fib57 = low_price39 + (price_range39 * 0.382)       
+fib58 = low_price39 + (price_range39 * 0.618)
+
+// Plot Lines
+line57 = line.new(bar_index - 100, fib57, bar_index, fib57, color=color.green, width=2, extend=extend.both)                                                  
+line58 = line.new(bar_index - 100, fib58, bar_index, fib58, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line57[1])
+line.delete(line58[1])
+
+// Label Fibonacci Levels
+x57 = label.new(bar_index + 499, fib57, text="39DN", color=color.yellow, size=size.small)
+x58 = label.new(bar_index + 499, fib58, text="39UP", color=color.yellow, size=size.small)
+
+// Retrieve Data for the 40th Month
+high_price40 = request.security(syminfo.tickerid, "M", high[40]) 
+low_price40 = request.security(syminfo.tickerid, "M", low[40])
+price_range40 = high_price40 - low_price40
+
+// Calculate Fibonacci Levels
+fib59 = low_price40 + (price_range40 * 0.382)       
+fib60 = low_price40 + (price_range40 * 0.618)
+
+// Plot Lines
+line59 = line.new(bar_index - 100, fib59, bar_index, fib59, color=color.green, width=2, extend=extend.both)                                                  
+line60 = line.new(bar_index - 100, fib60, bar_index, fib60, color=color.orange, width=2, extend=extend.both)
+
+// Delete Previous Lines
+line.delete(line59[1])
+line.delete(line60[1])
+
+// Label Fibonacci Levels
+x59 = label.new(bar_index + 100, fib59, text="40DN", color=color.yellow, size=size.small)
+x60 = label.new(bar_index + 100, fib60, text="40UP", color=color.yellow, size=size.small)
